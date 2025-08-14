@@ -1,0 +1,19 @@
+body{
+  background-color: #E31970;
+  background: radial-gradient(circle,rgba(227,25112, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+h1{
+   font-family: "Audiowide", sans-serif;}
+   h2{
+    font-family: georgia,serif;
+   }
+   .card-headerpy-3 {
+    font-family: URW Chancery L, cursive;
+    background-color: #FCB045;
+background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 42%, rgba(252, 176, 69, 1) 100%);
+   }
+   th{
+    font-family: URW Chancery L, cursive;
+    background-color: #FCB045;
+background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 42%, rgba(252, 176, 69, 1) 100%);
+   }
