@@ -101,4 +101,15 @@ document.getElementById("cityInput").addEventListener("keydown", function(event)
 
         // Refresh every 5 minutes
         setInterval(updateAllCities, 5 * 60 * 1000);
+        document.getElementById("howToUseBtn").addEventListener("click", function () {
+    const instructions = document.getElementById("instructions");
+    if (instructions.style.display === "none") {
+        instructions.style.display = "block"; // Show
+        this.innerText = "Hide Instructions";
+    } else {
+        instructions.style.display = "none"; // Hide
+        this.innerText = "How to Use?";
+    }
+});
+
     
