@@ -1,19 +1,68 @@
-body{
+/* Body and background */
+body {
   background-color: #E31970;
-  background: radial-gradient(circle,rgba(227,25112, 1) 0%, rgba(148, 187, 233, 1) 100%);
+  background: radial-gradient(circle, rgba(227, 251, 12, 1) 0%, rgba(148, 187, 233, 1) 100%);
+  margin: 0;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
 }
-h1{
-   font-family: "Audiowide", sans-serif;}
-   h2{
-    font-family: georgia,serif;
-   }
-   .card-headerpy-3 {
-    font-family: URW Chancery L, cursive;
-    background-color: #FCB045;
-background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 42%, rgba(252, 176, 69, 1) 100%);
-   }
-   th{
-    font-family: URW Chancery L, cursive;
-    background-color: #FCB045;
-background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 42%, rgba(252, 176, 69, 1) 100%);
-   }
+
+/* Headings */
+h1 {
+  font-family: 'Audiowide', sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+h2 {
+  font-family: Georgia, serif;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Card headers */
+.card-header.py-3 {
+  font-family: 'URW Chancery L', cursive;
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 42%, rgba(252,176,69,1) 100%);
+  color: white;
+}
+
+/* Table headers */
+th {
+  font-family: 'URW Chancery L', cursive;
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 42%, rgba(252,176,69,1) 100%);
+  color: white;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  input, .input-group {
+    width: 100%;
+  }
+
+  .card {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Weather container fade-in effect */
+.weather-container {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.weather-container.show {
+  opacity: 1;
+}
